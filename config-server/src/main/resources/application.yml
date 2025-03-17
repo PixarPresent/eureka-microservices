@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: config-server
+  profiles:
+    active: git
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/PixarPresent/configrepo
+          search-paths: "/configrepo/{application}/{profile}"
+          default-label: main
+server:
+  port: 8888

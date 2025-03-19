@@ -15,6 +15,7 @@ import java.util.List;
 @AllArgsConstructor
 public class DataBaseConfig {
 
+
     @Autowired
     private final MongoTemplate mongoTemplate;
 

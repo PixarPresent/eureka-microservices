@@ -1,6 +1,9 @@
 spring:
   application:
     name: book-service
+  data:
+    mongodb:
+      uri: mongodb://root:example@host.docker.internal:27017/bookdb?authSource=admin
 
 server:
   port: 8085
@@ -8,6 +11,6 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
+      defaultZone: http://host.docker.internal:8761/eureka
   instance:
     prefer-ip-address: true

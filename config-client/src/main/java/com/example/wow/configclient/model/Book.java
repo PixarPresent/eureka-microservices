@@ -1,9 +1,8 @@
-package com.example.wow.bookservice.model;
+package com.example.wow.configclient.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
-import lombok.Setter;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
